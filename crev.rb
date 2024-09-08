@@ -5,20 +5,20 @@
 class Crev < Formula
   desc "CLI tool for AI code reviews"
   homepage "https://github.com/vossenwout/crev"
-  version "0.0.4"
+  version "0.0.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/vossenwout/crev/releases/download/v0.0.4/crev_Darwin_x86_64.tar.gz"
-      sha256 "32de25fd62625cd24043b4db359055d56e88d587ebbbd0c50edb14f03fba0eb6"
+      url "https://github.com/vossenwout/crev/releases/download/v0.0.1/crev_Darwin_x86_64.tar.gz"
+      sha256 "8993cad50c2ffdce5018ee1d28e512a4b951bed5bf08cb6006bf9d8dc780a01a"
 
       def install
         bin.install "crev"
       end
     end
     on_arm do
-      url "https://github.com/vossenwout/crev/releases/download/v0.0.4/crev_Darwin_arm64.tar.gz"
-      sha256 "d44f22756ef5adca889d321e7086365824805ba1bcb2218c30ad8f0f1207ba01"
+      url "https://github.com/vossenwout/crev/releases/download/v0.0.1/crev_Darwin_arm64.tar.gz"
+      sha256 "65fa8655870849c7003b6c6307e88cf1b62d17b71d0a5b483e6e6efe441e469b"
 
       def install
         bin.install "crev"
@@ -29,8 +29,8 @@ class Crev < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vossenwout/crev/releases/download/v0.0.4/crev_Linux_x86_64.tar.gz"
-        sha256 "4e370b75d246e75f4edb43754ec127f03ce87d00da249479976bafbe8fcb36bc"
+        url "https://github.com/vossenwout/crev/releases/download/v0.0.1/crev_Linux_x86_64.tar.gz"
+        sha256 "1727460625e868d4e7d4a87feaef6fa4709b36a59b8d8d66b07ab4db42b679d4"
 
         def install
           bin.install "crev"
@@ -39,8 +39,8 @@ class Crev < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vossenwout/crev/releases/download/v0.0.4/crev_Linux_arm64.tar.gz"
-        sha256 "5a1c9cfc91eaedcf01228c2ee23d01a0527fa6407141bcb8e8e35a6a90ae608f"
+        url "https://github.com/vossenwout/crev/releases/download/v0.0.1/crev_Linux_arm64.tar.gz"
+        sha256 "bb49750d3b584b308c64c4d5bdbe446cea716605920668dbf993a6a51b4c26f6"
 
         def install
           bin.install "crev"
