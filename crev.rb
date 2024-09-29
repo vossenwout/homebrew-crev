@@ -10,7 +10,7 @@ class Crev < Formula
   on_macos do
     on_intel do
       url "https://github.com/vossenwout/crev/releases/download/v1.0.0/crev_Darwin_x86_64.tar.gz"
-      sha256 "0f8314f29b7dcc1e6ac96c69e6d28e0a0c5a010fd0ee6f49f35d594060e68220"
+      sha256 "93af5a0484c384c3940bd082934a8a8fc60b91ca0114f77835199dd8c98046b1"
 
       def install
         bin.install "crev"
@@ -18,7 +18,7 @@ class Crev < Formula
     end
     on_arm do
       url "https://github.com/vossenwout/crev/releases/download/v1.0.0/crev_Darwin_arm64.tar.gz"
-      sha256 "37a22ce4d9e158b2af9c0b34e0e321119ee6e15df8173b65a4fb917491328760"
+      sha256 "96e58d045a7e977c5bf2af0e370a6d9233d236b556caf4f2d17f1980fef8fcbc"
 
       def install
         bin.install "crev"
@@ -30,7 +30,7 @@ class Crev < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/vossenwout/crev/releases/download/v1.0.0/crev_Linux_x86_64.tar.gz"
-        sha256 "8fd8d520253502e5820d987c08f2d6709d3d98eb776bcb0c309ddcb588dd4d5a"
+        sha256 "c48dc4ceb13aedc00efbd4e55ea14369cce32987b3491e2a7a52be9db6c45435"
 
         def install
           bin.install "crev"
@@ -40,7 +40,7 @@ class Crev < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/vossenwout/crev/releases/download/v1.0.0/crev_Linux_arm64.tar.gz"
-        sha256 "06579c5bcbc90bce6a7cd7e11782d21d30844946daf4807c72f47b4ccc5920d7"
+        sha256 "d49d3a815dc4851c0ad2e47e76b6e8a58d853c567bbbb445ef4177f9f90b5cf3"
 
         def install
           bin.install "crev"
